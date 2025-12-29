@@ -39,6 +39,7 @@ export default function ResellerPage() {
               <div className="relative bg-white/5 backdrop-blur-2xl rounded-3xl p-10 md:p-12 border border-white/10 animate-fade-in-left animate-delay-200 shadow-[0_20px_50px_rgba(0,0,0,0.3)] transition-all duration-700 hover:rotate-y-2">
                 <h2 className="text-4xl md:text-5xl font-black mb-10 leading-[1.1]">
                   <span className="text-white">Join </span>
+              
                   <span className="bg-gradient-to-r from-yellow-300 via-yellow-400 to-orange-400 bg-clip-text text-transparent">
                     The Wise Parrot
                   </span>
@@ -50,9 +51,10 @@ export default function ResellerPage() {
                   <p className="text-gray-200 text-xl md:text-2xl leading-relaxed font-light">
                     Where ordinary people earn extraordinary income
                     using{" "}
-                    <span className="text-orange-400 font-black border-b-2 border-orange-400/30">
-                      AI.
-                    </span>
+                    <span className="text-orange-400 font-normal border-b-2 border-orange-400/30">
+  AI.
+</span>
+
                   </p>
 
                   <div className="bg-yellow-400/10 border-l-4 border-yellow-400 p-6 rounded-r-2xl backdrop-blur-sm">
@@ -88,9 +90,16 @@ export default function ResellerPage() {
           <div className="text-center mb-16 animate-scale-in animate-delay-400">
             <div className="relative inline-block group">
               <div className="absolute -inset-2 bg-gradient-to-r from-yellow-400 via-orange-500 to-yellow-400 rounded-full blur-2xl opacity-60 group-hover:opacity-100 transition duration-500 animate-pulse"></div>
-              <Button className="relative rounded-full bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-400 hover:from-yellow-300 hover:via-yellow-400 hover:to-yellow-300 text-black font-black text-2xl px-16 py-8 shadow-[0_10px_40px_rgba(250,204,21,0.4)] transition-all duration-500 hover:scale-110 active:scale-95 border-b-4 border-orange-600">
-                Start Your New Income Journey
-              </Button>
+              <a
+  href="https://wa.me/message/T6SQB5N6UUJXE1"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button className="relative rounded-full bg-gradient-to-r from-yellow-400 via-orange-400 to-yellow-400 hover:from-yellow-300 hover:via-yellow-400 hover:to-yellow-300 text-black font-black text-2xl px-16 py-8 shadow-[0_10px_40px_rgba(250,204,21,0.4)] transition-all duration-500 hover:scale-110 active:scale-95 border-b-4 border-orange-600">
+    Start Your New Income Journey
+  </Button>
+</a>
+
             </div>
           </div>
 
@@ -140,6 +149,9 @@ export default function ResellerPage() {
                 <p className="text-4xl font-bold text-[#042f2e]/80 italic">
                   Not a startup
                 </p>
+                <p className="text-4xl font-bold text-[#042f2e]/80 italic">
+                  Not a MLM
+                </p>
               </div>
 
               <div className="animate-fade-in-left animate-delay-300">
@@ -151,7 +163,9 @@ export default function ResellerPage() {
                 </h3>
                 <h3 className="text-3xl md:text-4xl font-black text-[#042f2e] mt-4">
                   Growth using{" "}
-                  <span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent italic">Ai</span>
+<span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
+  Ai
+</span>
                 </h3>
               </div>
 
@@ -267,14 +281,14 @@ export default function ResellerPage() {
             {/* Right - Content Boxes */}
             <div className="space-y-8 animate-fade-in-right animate-delay-300">
               {[
-                { title: "SELL & EARN", color: "from-blue-600 to-blue-400", desc: "25% lifetime commission. Sell The Wise Parrot subscriptions and earn every month." },
+                { title: "SELL & EARN", color: "from-blue-600 to-blue-400", desc: "25% lifetime commission. Sell The Wise Parrot subscriptions and earn." },
                 { title: "BUILD A TEAM", color: "from-emerald-600 to-emerald-400", desc: "After 5 sales, become a Leader. Get 10% on your team's sales." },
-                { title: "LEADERSHIP OVERRIDES", color: "from-pink-600 to-rose-400", desc: "Help your team grow and unlock 1% third layer income." }
+                { title: "LEADERSHIP OVERRIDES", color: "from-pink-600 to-rose-400", desc: "Grow your reseller network and enjoy an added 1% income from tier 3 sales." }
               ].map((step, i) => (
                 <div key={i} className="relative group cursor-pointer">
                   <div className={`absolute -inset-1 bg-gradient-to-r ${step.color} rounded-[2rem] blur-lg opacity-20 group-hover:opacity-60 transition duration-500`}></div>
                   <div className="relative bg-white/5 backdrop-blur-xl border border-white/10 rounded-[2rem] p-10 flex gap-8 transition-all duration-500 group-hover:-translate-y-2 group-hover:bg-white/10 shadow-2xl">
-                    <div className={`flex-shrink-0 w-16 h-16 rounded-2xl bg-gradient-to-br ${step.color} flex items-center justify-center text-3xl font-black shadow-lg`}>
+                    <div className={`flex-shrink-0 w-16 h-16 rounded-2xl bg-gradient-to-br ${step.color} flex items-center justify-center text 3xl font-black shadow-lg`}>
                       0{i+1}
                     </div>
                     <div>
@@ -292,6 +306,70 @@ export default function ResellerPage() {
           </div>
         </div>
       </section>
+
+      <section className="bg-[#042f2e] px-6 py-20 text-white">
+  <div className="max-w-5xl mx-auto flex flex-col items-center">
+    
+    {/* Header */}
+    <div className="flex items-center gap-4 mb-10">
+      <div className="bg-white text-[#042f2e] px-8 py-2 rounded-full font-bold text-sm tracking-tight shadow">
+        REAL INCOME CALCULATOR
+      </div>
+      <img
+        src="https://cdn.builder.io/api/v1/image/assets%2Fc77d5990ce0e4641969fde02309b04b0%2F789794b886f54c429b420239536dee00?format=webp&width=800"
+        className="h-12 w-12 rounded-full"
+        alt="Mascot"
+      />
+    </div>
+
+    {/* Box Grid */}
+    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full">
+
+      {/* Left Box */}
+      <div className="border border-green-500 rounded-3xl p-8">
+        <div className="bg-green-500 text-[#042f2e] inline-block px-5 py-1 rounded-full font-medium mb-6">
+          Aap kitna earn kar sakte ho?
+        </div>
+
+        <ul className="space-y-4 text-[17px] leading-relaxed">
+          <li>10 clients = ₹12,500 per month</li>
+          <li>20 clients = ₹25,000 per month</li>
+          <li>50 clients = ₹62,500 per month</li>
+          <li className="text-yellow-400 font-semibold">
+            100 clients = ₹1,25,000 per month
+          </li>
+        </ul>
+      </div>
+
+      {/* Right Box */}
+      <div className="border border-orange-500 rounded-3xl p-8">
+        <div className="bg-orange-500 text-[#042f2e] inline-block px-5 py-1 rounded-full font-medium mb-6">
+          Team banayi?
+        </div>
+
+        <ul className="space-y-4 text-[17px] leading-relaxed">
+          <li>• 4 log team me</li>
+          <li>• Har ek 10 sale/month</li>
+          <li>• Aap - 10% override</li>
+        </ul>
+
+        <p className="mt-5 text-[17px] font-semibold leading-relaxed">
+          <span className="text-yellow-400">
+            = EXTRA ₹20,000 to ₹40,000 monthly
+          </span>
+          <br />
+          <span className="text-green-400">
+            WITHOUT WORKING
+          </span>
+        </p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+      
 
       {/* Why You Will Win Section */}
       <section className="relative bg-gradient-to-br from-[#042f2e] to-[#0a3030] px-4 py-24 overflow-hidden">
@@ -319,7 +397,7 @@ export default function ResellerPage() {
                       "Aapko koi Office nahi chahiye",
                       "Aapko koi fancy English nahi chahiye",
                       "Aapko koi scam nahi karna",
-                      "Aapko koi akele nahi rehna",
+                      "Aapko khi akele nahi rehna",
                     ].map((item, idx) => (
                       <li key={idx} className="text-yellow-100/80 text-xl flex items-center gap-4 font-light">
                         <span className="text-yellow-400 text-2xl">•</span>
@@ -356,7 +434,7 @@ export default function ResellerPage() {
           <div className="relative mb-20 animate-fade-in-up">
             <div className="flex flex-col md:flex-row items-center justify-center gap-12">
               <div className="text-center md:text-left">
-                <span className="text-white/60 font-black text-3xl uppercase tracking-widest mb-4 block">THE MIRACLE</span>
+                
                 <div className="relative group">
                   <div className="absolute inset-0 bg-white/20 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
                   <img src={offerBrush} alt="Offer brush" className="w-96 h-auto drop-shadow-2xl transition-transform duration-500 group-hover:scale-110" />
@@ -396,12 +474,56 @@ export default function ResellerPage() {
 
           <div className="grid grid-cols-1 md:grid-cols-3 lg:grid-cols-5 gap-6">
             {[
-              { name: "Partner Kit", items: ["WhatsApp sales scripts", "Elevator pitch & formula", "Demo script pack", "30-day closing plan", "Instagram DM playbook"] },
-              { name: "Content Kit", items: ["100 ready-to-use reels", "60 story templates", "Digital posters", "Hook bank & scripts"] },
-              { name: "Funnel Kit", items: ["Personal referral code", "Personal landing page", "Automated onboarding"] },
-              { name: "Training Kit", items: ["TWP Basics", "Closing mastery", "Lead-gen training", "First 5 sales roadmap"] },
-              { name: "Leader Kit", items: ["Team tracking scripts", "Partner certificate", "Team leaderboard", "Exclusive campaigns", "Mastermind access"] }
-            ].map((kit, i) => (
+  {
+    name: "Partner Kit",
+    items: [
+      "WhatsApp sales scripts",
+      "Elevator pitch & sales formula",
+      "Demo script + Objection handling pack",
+      "30-day closing calendar",
+      "Broadcast templates & Ads playbook"
+    ]
+  },
+  {
+    name: "Content Kit",
+    items: [
+      "100 ready-to-use reels",
+      "100 story templates",
+      "Digital posters & carousels",
+      "30 UGC video scripts"
+    ]
+  },
+  {
+    name: "Funnel Kit",
+    items: [
+      "Personal referral code",
+      "Personal landing page",
+      "Automated WhatsApp onboarding flow"
+    ]
+  },
+  {
+    name: "Training Kit",
+    items: [
+      "The Wise Parrot basics",
+      "Closing mastery",
+      "Business growth psychology",
+      "How to make your first 5 sales",
+      "Leadership & team-building training"
+    ]
+  },
+  {
+    name: "Leader Kit (after 5 clients)",
+    items: [
+      "Team training scripts",
+      "Leader certificate",
+      "Team leaderboard",
+      "Exclusive campaigns",
+      "Income booster templates",
+      "Priority support & mastermind access"
+    ]
+  }
+]
+.map((kit, i) => (
               <div key={i} className="bg-white/5 backdrop-blur-2xl border border-white/10 rounded-3xl p-8 hover:bg-white/10 transition-all duration-500 hover:-translate-y-3 flex flex-col group">
                 <div className="w-14 h-14 rounded-2xl bg-yellow-400/20 text-yellow-400 flex items-center justify-center text-2xl font-black mb-8 group-hover:scale-110 transition-transform">
                   ✓
@@ -417,25 +539,101 @@ export default function ResellerPage() {
           </div>
         </div>
       </section>
+        {/* WHY NOW CARD (No Animation) */}
+  {/* WHY NOW CARD */}
+<div className="text-center mt-28 relative z-10">
+  <h2 className="text-yellow-400 font-extrabold text-4xl mb-12 tracking-wide">
+    WHY NOW?
+  </h2>
+
+  {/* Wrapper to allow overflow image */}
+  <div className="relative max-w-md mx-auto">
+
+    {/* Card */}
+    <div className="bg-[#fff4dd] rounded-[32px] px-12 py-14 shadow-xl text-left relative z-10">
+      
+      {/* Title */}
+      <h3 className="text-orange-500 font-extrabold text-2xl leading-snug mb-8">
+        Leader is not a title,<br />
+        It is a lifestyle.
+      </h3>
+
+      {/* Bullet List */}
+      <ul className="space-y-3 text-lg font-semibold text-[#0b2f6b]">
+        <li>• Monthly earning</li>
+        <li>• Recognition</li>
+        <li>• Team</li>
+        <li>• Impact</li>
+        <li>• Growth</li>
+        <li>• Respect</li>
+        <li>• Freedom</li>
+      </ul>
+
+      {/* Bottom Highlight */}
+      <div className="mt-10 inline-block border border-[#042f2e]/30 rounded-xl px-6 py-3 text-sm font-medium text-[#042f2e] bg-white/70">
+        Your identity will shift,<br />
+        Your earning will too.
+      </div>
+    </div>
+
+    {/* HALF-OVERFLOW MASCOT */}
+    <img
+      src="https://cdn.builder.io/api/v1/image/assets%2F45192b2c68a54ab78a6c12221a1dbb89%2Fa682d8c02b4c4265acb38f5670a26d86?format=webp&width=600"
+      alt="Wise Parrot"
+      className="
+        absolute
+        bottom-0
+        -right-20
+        h-56
+        w-auto
+        z-20
+        pointer-events-none
+      "
+    />
+  </div>
+
+  {/* CTA */}
+  <a
+  href="https://wa.me/message/JEKHUQ7TRAD4F1"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <button className="mt-14 bg-yellow-400 text-[#042f2e] px-14 py-4 rounded-full text-lg font-extrabold shadow-lg">
+    YES, I WANT TO CHANGE MY LIFE
+  </button>
+</a>
+
+
+  {/* Quote */}
+  <p className="mt-12 text-white/70 italic text-base">
+    “Your one decision today will change your next 10 years”
+  </p>
+</div>
+
+
+
 
       {/* Huge Offer Section */}
       <section className="relative bg-gradient-to-br from-[#042f2e] via-[#0a3030] to-[#042f2e] px-4 py-32 overflow-hidden">
         <div className="mx-auto max-w-5xl text-center relative z-10">
-          <div className="inline-block bg-green-600 px-16 py-6 rounded-[2rem] shadow-2xl mb-12 border-b-8 border-green-800 animate-bounce-slow">
-            <p className="font-black text-4xl text-white uppercase tracking-tighter italic">HUGE OFFER</p>
-          </div>
-          <h2 className="text-7xl md:text-9xl font-black bg-gradient-to-r from-orange-400 via-yellow-400 to-orange-500 bg-clip-text text-transparent mb-12 uppercase tracking-tighter drop-shadow-2xl">
-            ONLY ₹999
-          </h2>
+          
+          
           <div className="flex justify-center mb-16">
             <div className="relative group">
               <div className="absolute inset-0 bg-orange-500/20 rounded-full blur-[120px]"></div>
               <img src={thumbsUpParrot} alt="Excited character" className="h-96 w-auto relative z-10 drop-shadow-[0_40px_40px_rgba(0,0,0,0.6)] transition-all duration-700 group-hover:scale-110 group-hover:rotate-6" />
             </div>
           </div>
-          <Button className="rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-black text-4xl px-24 py-12 shadow-[0_20px_80px_rgba(251,191,36,0.5)] hover:scale-110 transition-all duration-500 border-b-8 border-orange-700">
-            JOIN NOW
-          </Button>
+          <a
+  href="https://wa.me/message/FDKD5HIY2RKBF1"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button className="rounded-full bg-gradient-to-r from-yellow-400 to-orange-500 text-black font-black text-4xl px-24 py-12 shadow-[0_20px_80px_rgba(251,191,36,0.5)] hover:scale-110 transition-all duration-500 border-b-8 border-orange-700">
+    JOIN NOW
+  </Button>
+</a>
+
         </div>
       </section>
     </div>
