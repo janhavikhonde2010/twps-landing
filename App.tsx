@@ -10,6 +10,7 @@ import SubscriptionCards from "./components/SubscriptionCards";
 import Footer from "./components/Footer";
 import Reseller from "./components/Reseller";
 import Blogs from "./components/Blogs";
+import Contact from "./components/Contact"; // ✅ NEW
 
 function App() {
   const [currentPage, setCurrentPage] = useState("home");
@@ -28,6 +29,7 @@ function App() {
 
   return (
     <div className="font-sans text-[#042f2e]">
+
       {currentPage === "blogs" ? (
         <>
           <NavBar />
@@ -38,6 +40,12 @@ function App() {
         <>
           <NavBar />
           <Reseller />
+          <Footer />
+        </>
+      ) : currentPage === "contact" ? (   // ✅ NEW
+        <>
+          <NavBar />
+          <Contact />
           <Footer />
         </>
       ) : (
@@ -53,6 +61,7 @@ function App() {
           <Footer />
         </div>
       )}
+
     </div>
   );
 }

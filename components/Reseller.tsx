@@ -49,7 +49,7 @@ export default function ResellerPage() {
 
                 <div className="space-y-8">
                   <p className="text-gray-200 text-xl md:text-2xl leading-relaxed font-light">
-                    Where ordinary people earn extraordinary income
+                    Where ordinary & hungry people earn extraordinary income.
                     using{" "}
                     <span className="text-orange-400 font-normal border-b-2 border-orange-400/30">
   AI.
@@ -118,120 +118,107 @@ export default function ResellerPage() {
       </section>
 
       {/* Why This Is Different Section */}
-      <section className="bg-gradient-to-b from-[#fffce8] to-[#fef3c7] px-4 py-24 relative overflow-hidden">
-        {/* Abstract Background Shapes */}
-        <div className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none">
-          <div className="absolute top-20 right-[-10%] w-[600px] h-[600px] border-[40px] border-orange-500 rounded-full"></div>
-          <div className="absolute bottom-20 left-[-10%] w-[400px] h-[400px] border-[30px] border-emerald-500 rounded-full"></div>
+     <section className="bg-gradient-to-b from-[#fffce8] to-[#fef3c7] px-4 py-24 relative overflow-hidden">
+  {/* Background Shapes */}
+  <div className="absolute inset-0 opacity-5 pointer-events-none">
+    <div className="absolute top-20 right-[-10%] w-[600px] h-[600px] border-[40px] border-orange-500 rounded-full" />
+    <div className="absolute bottom-20 left-[-10%] w-[400px] h-[400px] border-[30px] border-emerald-500 rounded-full" />
+  </div>
+
+  <div className="mx-auto max-w-6xl relative z-10">
+    {/* Header */}
+    <div className="mb-20 text-center">
+      <div className="relative inline-block">
+        <div className="absolute -inset-1 bg-gradient-to-r from-[#042f2e] via-emerald-600 to-[#042f2e] rounded-full blur-lg opacity-40" />
+        <div className="relative bg-[#042f2e] text-white px-14 py-5 rounded-full font-black text-3xl shadow-2xl tracking-tight">
+          WHY THIS IS DIFFERENT?
+        </div>
+      </div>
+    </div>
+
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
+      {/* LEFT SIDE */}
+      <div className="space-y-12">
+        <h3 className="text-5xl md:text-6xl font-extrabold text-[#042f2e]">
+          This Is
+        </h3>
+
+        {/* NOT statements */}
+        <div className="space-y-6 pl-8 border-l-4 border-[#042f2e]/20">
+          <p className="text-2xl md:text-3xl font-semibold text-[#042f2e]">
+            <span className="text-red-600 font-extrabold mr-2">NOT</span>a Job
+          </p>
+          <p className="text-2xl md:text-3xl font-semibold text-[#042f2e]">
+            <span className="text-red-600 font-extrabold mr-2">NOT</span>a Startup
+          </p>
+          <p className="text-2xl md:text-3xl font-semibold text-[#042f2e]">
+            <span className="text-red-600 font-extrabold mr-2">NOT</span>an MLM
+          </p>
         </div>
 
-        <div className="mx-auto max-w-6xl relative z-10">
-          {/* Header Badge */}
-          <div className="mb-20 animate-fade-in text-center">
-            <div className="relative inline-block group">
-              <div className="absolute -inset-1 bg-gradient-to-r from-[#042f2e] via-emerald-600 to-[#042f2e] rounded-full blur-lg opacity-40 group-hover:opacity-80 transition duration-500"></div>
-              <div className="relative bg-[#042f2e] text-white px-14 py-5 rounded-full font-black text-3xl shadow-2xl transform group-hover:scale-105 transition-all duration-300 tracking-tight">
-                WHY THIS IS DIFFERENT?
-              </div>
-            </div>
-          </div>
+        <div className="w-20 h-1 bg-orange-400 rounded-full" />
 
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-20 items-center">
-            {/* Left Content */}
-            <div className="space-y-12">
-              <div className="animate-fade-in-left animate-delay-200">
-                <h3 className="text-6xl md:text-7xl font-black text-[#042f2e] mb-4 leading-[0.9] tracking-tighter">
-                  This is{" "}
-                  <span className="bg-gradient-to-r from-red-600 to-red-500 bg-clip-text text-transparent drop-shadow-sm">NOT</span>
-                  <br />
-                  a job
-                </h3>
-                <p className="text-4xl font-bold text-[#042f2e]/80 italic">
-                  Not a startup
+        {/* ONE LINE UPDATED TEXT */}
+        <h4 className="text-3xl md:text-4xl font-extrabold text-[#042f2e]">
+          This is a{" "}
+          <span className="text-orange-500">
+            Movement for Automating Business Growth using AI
+          </span>
+        </h4>
+
+        {/* No-Nos Card */}
+        <div className="relative">
+          <div className="absolute inset-0 bg-gradient-to-br from-orange-200/20 via-yellow-100/20 to-emerald-200/20 rounded-[3rem] blur-2xl" />
+          <div className="relative bg-white/90 rounded-[3rem] px-16 py-16 shadow-xl">
+            <div className="space-y-8">
+              {[
+                "No Product to build",
+                "No Tech skills needed",
+                "No Investment",
+                "No Office",
+              ].map((item) => (
+                <p
+                  key={item}
+                  className="pl-8 border-l-4 border-[#042f2e]/60 text-2xl md:text-3xl font-extrabold text-[#042f2e]"
+                >
+                  {item}
                 </p>
-                <p className="text-4xl font-bold text-[#042f2e]/80 italic">
-                  Not a MLM
-                </p>
-              </div>
-
-              <div className="animate-fade-in-left animate-delay-300">
-                <h3 className="text-3xl md:text-4xl font-black text-[#042f2e] leading-snug tracking-tight">
-                  This is a{" "}
-                  <span className="bg-gradient-to-r from-orange-600 via-orange-500 to-orange-600 bg-clip-text text-transparent border-b-4 border-orange-500/20">
-                    Movement for Automating Business
-                  </span>
-                </h3>
-                <h3 className="text-3xl md:text-4xl font-black text-[#042f2e] mt-4">
-                  Growth using{" "}
-<span className="bg-gradient-to-r from-emerald-600 to-teal-600 bg-clip-text text-transparent">
-  Ai
-</span>
-                </h3>
-              </div>
-
-              {/* No-Nos Box */}
-              <div className="relative group perspective-1000">
-                <div className="absolute -inset-1 bg-[#042f2e]/10 rounded-[2rem] blur-2xl group-hover:bg-[#042f2e]/20 transition-all duration-700"></div>
-                <div className="relative border-2 border-[#042f2e]/10 rounded-[2rem] p-10 md:p-12 bg-white/80 backdrop-blur-xl animate-scale-in animate-delay-400 shadow-[0_30px_60px_-15px_rgba(0,0,0,0.1)] transition-all duration-700 group-hover:-rotate-x-2 group-hover:rotate-y-2">
-                  <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
-                    {[
-                      "No Product to build",
-                      "No Tech skills needed",
-                      "No Investment",
-                      "No Office",
-                    ].map((item, idx) => (
-                      <div
-                        key={idx}
-                        className="flex items-center gap-4 group/item"
-                      >
-                        <div className="flex items-center justify-center w-10 h-10 rounded-xl bg-[#042f2e] text-orange-400 group-hover/item:scale-110 transition-transform shadow-lg">
-                          <span className="text-xl font-bold">▶</span>
-                        </div>
-                        <span className="text-xl font-black text-[#042f2e] leading-tight">{item}</span>
-                      </div>
-                    ))}
-                  </div>
-                </div>
-              </div>
-            </div>
-
-            {/* Right Side - You Get Box */}
-            <div className="flex flex-col animate-fade-in-right animate-delay-300">
-              <div className="relative group perspective-1000">
-                <div className="absolute -inset-2 bg-gradient-to-r from-emerald-500 to-teal-500 rounded-[2.5rem] blur-2xl opacity-20 group-hover:opacity-40 transition duration-1000"></div>
-                <div className="relative bg-[#042f2e] rounded-[2.5rem] p-12 md:p-16 text-white animate-scale-in animate-delay-500 shadow-[0_40px_80px_-20px_rgba(0,0,0,0.4)] border border-emerald-400/20 overflow-hidden">
-                  {/* Internal Glow */}
-                  <div className="absolute -top-20 -right-20 w-64 h-64 bg-emerald-500/20 rounded-full blur-[80px]"></div>
-                  
-                  <h4 className="text-4xl font-black bg-gradient-to-r from-yellow-300 via-orange-400 to-yellow-300 bg-clip-text text-transparent mb-12 relative z-10">
-                    You get:
-                  </h4>
-                  <ul className="space-y-8 relative z-10">
-                    {[
-                      "A real SaaS product",
-                      "A ready-made earning system",
-                      "Leadership path",
-                      "Support & Mentorship",
-                    ].map((item, idx) => (
-                      <li
-                        key={idx}
-                        className="flex items-center gap-6 group/li cursor-pointer"
-                      >
-                        <div className="flex items-center justify-center w-12 h-12 rounded-2xl bg-gradient-to-br from-green-400 to-emerald-600 shadow-[0_0_20px_rgba(52,211,153,0.3)] group-hover/li:scale-110 transition-all duration-300 group-hover/li:rotate-12">
-                          <Check className="h-7 w-7 text-white stroke-[4]" />
-                        </div>
-                        <span className="text-2xl text-yellow-100/90 font-bold group-hover/li:text-white transition-colors duration-300">
-                          {item}
-                        </span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-              </div>
+              ))}
             </div>
           </div>
         </div>
-      </section>
+      </div>
+
+      {/* RIGHT SIDE */}
+      <div className="relative">
+        <div className="absolute -inset-6 bg-gradient-to-br from-emerald-400/25 via-teal-300/20 to-yellow-300/20 rounded-[3rem] blur-3xl" />
+
+        <div className="relative bg-[#042f2e] rounded-[3rem] px-16 py-16 shadow-[0_40px_90px_-25px_rgba(0,0,0,0.45)] border border-emerald-400/20">
+          <h3 className="text-4xl md:text-5xl font-black bg-gradient-to-r from-yellow-300 via-orange-400 to-yellow-300 bg-clip-text text-transparent mb-14">
+            You get
+          </h3>
+
+          <ul className="space-y-10">
+            {[
+              "A real SaaS product",
+              "A ready-made earning system",
+              "Leadership path",
+              "Support & Mentorship",
+            ].map((item) => (
+              <li
+                key={item}
+                className="pl-6 border-l-4 border-white/30 text-2xl md:text-3xl font-semibold text-yellow-100"
+              >
+                {item}
+              </li>
+            ))}
+          </ul>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
 
       {/* Just 3 Steps Section */}
       <section className="relative bg-[#042f2e] px-4 py-24 overflow-hidden border-y border-white/5">
@@ -281,8 +268,8 @@ export default function ResellerPage() {
             {/* Right - Content Boxes */}
             <div className="space-y-8 animate-fade-in-right animate-delay-300">
               {[
-                { title: "SELL & EARN", color: "from-blue-600 to-blue-400", desc: "25% lifetime commission. Sell The Wise Parrot subscriptions and earn." },
-                { title: "BUILD A TEAM", color: "from-emerald-600 to-emerald-400", desc: "After 5 sales, become a Leader. Get 10% on your team's sales." },
+                { title: "SELL ,IMPLEMENT & EARN.", color: "from-blue-600 to-blue-400", desc: "20% lifetime commission. Sell The Wise Parrot subscriptions and earn." },
+                { title: "BUILD A TEAM", color: "from-emerald-600 to-emerald-400", desc: "After 5 sales, become a Leader. Get 7% on your team's sales." },
                 { title: "LEADERSHIP OVERRIDES", color: "from-pink-600 to-rose-400", desc: "Grow your reseller network and enjoy an added 1% income from tier 3 sales." }
               ].map((step, i) => (
                 <div key={i} className="relative group cursor-pointer">
@@ -307,69 +294,7 @@ export default function ResellerPage() {
         </div>
       </section>
 
-      <section className="bg-[#042f2e] px-6 py-20 text-white">
-  <div className="max-w-5xl mx-auto flex flex-col items-center">
-    
-    {/* Header */}
-    <div className="flex items-center gap-4 mb-10">
-      <div className="bg-white text-[#042f2e] px-8 py-2 rounded-full font-bold text-sm tracking-tight shadow">
-        REAL INCOME CALCULATOR
-      </div>
-      <img
-        src="https://cdn.builder.io/api/v1/image/assets%2Fc77d5990ce0e4641969fde02309b04b0%2F789794b886f54c429b420239536dee00?format=webp&width=800"
-        className="h-12 w-12 rounded-full"
-        alt="Mascot"
-      />
-    </div>
-
-    {/* Box Grid */}
-    <div className="grid grid-cols-1 md:grid-cols-2 gap-10 w-full">
-
-      {/* Left Box */}
-      <div className="border border-green-500 rounded-3xl p-8">
-        <div className="bg-green-500 text-[#042f2e] inline-block px-5 py-1 rounded-full font-medium mb-6">
-          Aap kitna earn kar sakte ho?
-        </div>
-
-        <ul className="space-y-4 text-[17px] leading-relaxed">
-          <li>10 clients = ₹12,500 per month</li>
-          <li>20 clients = ₹25,000 per month</li>
-          <li>50 clients = ₹62,500 per month</li>
-          <li className="text-yellow-400 font-semibold">
-            100 clients = ₹1,25,000 per month
-          </li>
-        </ul>
-      </div>
-
-      {/* Right Box */}
-      <div className="border border-orange-500 rounded-3xl p-8">
-        <div className="bg-orange-500 text-[#042f2e] inline-block px-5 py-1 rounded-full font-medium mb-6">
-          Team banayi?
-        </div>
-
-        <ul className="space-y-4 text-[17px] leading-relaxed">
-          <li>• 4 log team me</li>
-          <li>• Har ek 10 sale/month</li>
-          <li>• Aap - 10% override</li>
-        </ul>
-
-        <p className="mt-5 text-[17px] font-semibold leading-relaxed">
-          <span className="text-yellow-400">
-            = EXTRA ₹20,000 to ₹40,000 monthly
-          </span>
-          <br />
-          <span className="text-green-400">
-            WITHOUT WORKING
-          </span>
-        </p>
-      </div>
-
-    </div>
-  </div>
-</section>
-
-
-      
+          
 
       {/* Why You Will Win Section */}
       <section className="relative bg-gradient-to-br from-[#042f2e] to-[#0a3030] px-4 py-24 overflow-hidden">
@@ -430,22 +355,7 @@ export default function ResellerPage() {
             </div>
           </div>
 
-          {/* The Miracle Offer Section - Updated with selected images */}
-          <div className="relative mb-20 animate-fade-in-up">
-            <div className="flex flex-col md:flex-row items-center justify-center gap-12">
-              <div className="text-center md:text-left">
-                
-                <div className="relative group">
-                  <div className="absolute inset-0 bg-white/20 rounded-full blur-3xl opacity-0 group-hover:opacity-100 transition-opacity"></div>
-                  <img src={offerBrush} alt="Offer brush" className="w-96 h-auto drop-shadow-2xl transition-transform duration-500 group-hover:scale-110" />
-                </div>
-              </div>
-              <div className="relative group">
-                <div className="absolute inset-0 bg-yellow-400/20 rounded-full blur-[100px] animate-pulse"></div>
-                <img src={foldedArmsParrot} alt="Wise Parrot Character" className="h-80 w-auto relative z-10 drop-shadow-[0_30px_30px_rgba(0,0,0,0.5)] transition-all duration-700 group-hover:rotate-3 group-hover:scale-105" />
-              </div>
-            </div>
-          </div>
+          
 
           <div className="text-center">
             <p className="text-yellow-400 font-black text-4xl drop-shadow-lg animate-bounce-slow">
@@ -559,15 +469,32 @@ export default function ResellerPage() {
       </h3>
 
       {/* Bullet List */}
-      <ul className="space-y-3 text-lg font-semibold text-[#0b2f6b]">
-        <li>• Monthly earning</li>
-        <li>• Recognition</li>
-        <li>• Team</li>
-        <li>• Impact</li>
-        <li>• Growth</li>
-        <li>• Respect</li>
-        <li>• Freedom</li>
-      </ul>
+      <ul className="grid grid-cols-3 gap-y-6 gap-x-10 text-lg font-semibold text-[#0b2f6b]">
+  <li className="flex items-center gap-2">
+    <span className="text-orange-500">•</span> Monthly earning
+  </li>
+  <li className="flex items-center gap-2">
+    <span className="text-orange-500">•</span> Recognition
+  </li>
+  <li className="flex items-center gap-2">
+    <span className="text-orange-500">•</span> Team
+  </li>
+
+  <li className="flex items-center gap-2">
+    <span className="text-orange-500">•</span> Impact
+  </li>
+  <li className="flex items-center gap-2">
+    <span className="text-orange-500">•</span> Growth
+  </li>
+  <li className="flex items-center gap-2">
+    <span className="text-orange-500">•</span> Respect
+  </li>
+
+  <li className="flex items-center gap-2 col-span-3">
+    <span className="text-orange-500">•</span> Freedom
+  </li>
+</ul>
+
 
       {/* Bottom Highlight */}
       <div className="mt-10 inline-block border border-[#042f2e]/30 rounded-xl px-6 py-3 text-sm font-medium text-[#042f2e] bg-white/70">
